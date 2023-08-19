@@ -46,7 +46,9 @@
   right: 0;
   z-index: -1;
 }
-
+#section-1 .row{
+  background: none;
+}
 .stars {
   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
   position: absolute;
@@ -254,9 +256,15 @@ h1 {
 
 #section-1 h1 {
   max-width: 700px;
-  font-weight: 300;
-  min-height: 4.5em;
+  font-weight: 700;
   margin: 0;
+  font-size: 52px;
+}
+#section-1 h2{
+  line-height: 1.3em;
+  margin: 0;
+  font-weight: 300;
+  font-size: 36px;
 }
 
 .footer-logo {
