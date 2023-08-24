@@ -7,6 +7,12 @@
     <title>Home | Artificers</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <!-- <script src="sweetalert2.all.min.js"></script> -->
+    <!-- <script src="jquery.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    
 </head>
 
 <body>
@@ -54,7 +60,7 @@
                 </div>
             </div>
         </section>
-
+   
         <section id="section-2">
             <div class="section">
                 <div class="row">
@@ -188,6 +194,69 @@
     <div class="gradient"></div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./js/custom.js"></script>
+
+    <!-- Swal -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+          Swal.fire({
+            html: `
+            <div class="blur-bg">
+            <div id="slick-carousel">
+                <div class="slide-content"><img src="./assets/hackathon/slide1.png" /></div>
+                <div class="slide-content"><img src="./assets/hackathon/slide2.png" /></div>
+                <div class="slide-content"><img src="./assets/hackathon/slide3.png" /></div>
+                <div class="slide-content"><img src="./assets/hackathon/slide4.png" /></div>
+                <div class="slide-content form-in-swal">
+                    <h1>FOrm here</h1>
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="text" placeholder="Enter Name" />
+                    <input type="submit" />
+                </div>
+            </div>
+            </div>
+            `,
+            width: '100%',
+            showConfirmButton: false,
+            didOpen: () => {
+                jQuery('#slick-carousel').slick({
+                    lazyLoad: 'ondemand',
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToShow: 1,
+                    color: 'black',
+                    opacity:0.7,
+                    infinite: false,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    ]
+                }); 
+            }
+            }).then(() => {
+
+                
+          });
+        };
+    </script>
 
 </body>
 

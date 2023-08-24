@@ -565,3 +565,48 @@ h3.inner-start-tag {
 * {
   transition: all 0.25s ease-out;
 }
+
+/* SWAL -HACKATHON  */
+
+.slide-content img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+div:where(.swal2-container) div:where(.swal2-popup) {
+  background-color: transparent;
+}
+/* .blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  filter: blur(28px);
+
+} */
+#slick-carousel {
+  position: relative;
+  z-index: 1;
+}
+div:where(.swal2-container) .swal2-html-container {
+  overflow: hidden !important;
+}
+div:where(.swal2-container).swal2-center>.swal2-popup {
+  background-color: transparent;
+}
+.slick-prev, .slick-next {
+  width: 200px !important;
+}
+.slick-prev:before, .slick-next:before {
+  font-size: 50px !important;
+}
+.form-in-swal {
+  background:#fff;
+  height: 90vh !important;
+}
+.form-in-swal * {
+  color: #222;
+}
