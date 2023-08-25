@@ -204,22 +204,30 @@
         window.onload = function() {
           Swal.fire({
             html: `
-            <div class="blur-bg">
-            <div id="slick-carousel">
-                <div class="slide-content"><img src="./assets/hackathon/Frame1.png" /></div>
-                <div class="slide-content">
-                    <img class="frame1" src="./assets/hackathon/Connect.png" />
-                    <img src="./assets/hackathon/Frame2.png" /></div>
-                <div class="slide-content"><img src="./assets/hackathon/Frame3.png" /></div>
-                <div class="slide-content"><img src="./assets/hackathon/Frame4.png" /></div>
-                <div class="slide-content"><img src="./assets/hackathon/hackcelerate.png" /></div>
-
-                <div class="slide-content form-in-swal">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRUXabzNPHQe3rHo-UpqXyv0loP4acofDdIsEo58mNf85rbw/viewform?embedded=true" width="940" height="560" frameborder="0" marginheight="0" marginwidth="0" 
-                    style="background:#fff;border-radius: 20px;">Loading…</iframe>
+            
+                <div id="slick-carousel">
+                    <div class="slide">
+                        <img src="./assets/hackathon/Group1.svg" class="imagebck" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hackathon/Connect.png" alt="Image 2" class="slide-image" />
+                        <img src="./assets/hackathon/Frame.png" class="imagebck" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hackathon/Feature.png" alt="Image 3" class="slide-image"" />
+                        <img src="./assets/hackathon/Frame.png" class="imagebck" />
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/hackathon/Identify.png" alt="Image 4" class="slide-image" " />
+                        <img src="./assets/hackathon/Frame.png" class="imagebck" />
+                    </div>
+                    
+                    <div class="slide form-in-swal">
+                        <img  src="./assets/hackathon/head.png" style="width:800px;padding-left: 253px;height: 137px;" />
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRUXabzNPHQe3rHo-UpqXyv0loP4acofDdIsEo58mNf85rbw/viewform?embedded=true" width="800" height="500" frameborder="0" marginheight="100" marginwidth="0" 
+                        style="background:#fff;">Loading…</iframe>
+                    </div>
                 </div>
-            </div>
-            </div>
             `,
             width: '100%',
             showConfirmButton: false,
@@ -228,7 +236,7 @@
                     lazyLoad: 'ondemand',
                     speed: 300,
                     slidesToShow: 1,
-                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     color: 'black',
                     opacity:0.7,
                     infinite: false,

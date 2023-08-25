@@ -568,12 +568,6 @@ h3.inner-start-tag {
 
 /* SWAL -HACKATHON  */
 
-.slide-content {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  position:relative;
-}
 .slide-content img {
   width: 70%;
   height: auto;
@@ -584,22 +578,27 @@ h3.inner-start-tag {
 div:where(.swal2-container) div:where(.swal2-popup) {
   background-color: transparent;
 }
-/* .blur-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.5;
-  filter: blur(28px);
-
+/* .carousel-bg {
+  display:flex;
+  justify-items: center;
+  margin-top:10px;
 } */
-#slick-carousel {
+/* #slick-carousel {
   position: relative;
   z-index: 1;
-
+} */
+/* .slick-carousel1 {
+  position: relative;
+  z-index: 1;
 }
+.slick-carousel2 {
+  position: relative;
+  z-index: 1;
+}
+.slick-carousel3 {
+  position: relative;
+  z-index: 1;
+} */
 div:where(.swal2-container) .swal2-html-container {
   overflow: hidden !important;
 }
@@ -619,9 +618,22 @@ div:where(.swal2-container).swal2-center>.swal2-popup {
   color: #222;
 }
 
-.frame1 {
-  position:absolute;
-  z-index:5;
-  top: 10px;
-  left:30px;
+.slide {
+  position: relative;
+  display:flex;
+  justify-content: center;
+}
+
+.slide-image {
+  position: absolute;
+  top: 64px;
+  left: 181px;
+  width: 748px;
+  height: 313px;
+}
+.imagebck {
+  width: 1037px;
+  height: 600px;
+  padding-left: 134px;
+  padding-top: 30px;
 }
