@@ -568,11 +568,19 @@ h3.inner-start-tag {
 
 /* SWAL -HACKATHON  */
 
+.slide-content {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position:relative;
+}
 .slide-content img {
   width: 70%;
   height: auto;
   margin: auto;
 }
+
+
 div:where(.swal2-container) div:where(.swal2-popup) {
   background-color: transparent;
 }
@@ -590,6 +598,7 @@ div:where(.swal2-container) div:where(.swal2-popup) {
 #slick-carousel {
   position: relative;
   z-index: 1;
+
 }
 div:where(.swal2-container) .swal2-html-container {
   overflow: hidden !important;
@@ -604,9 +613,15 @@ div:where(.swal2-container).swal2-center>.swal2-popup {
   font-size: 50px !important;
 }
 .form-in-swal {
-  background:#fff;
   height: 90vh !important;
 }
 .form-in-swal * {
   color: #222;
+}
+
+.frame1 {
+  position:absolute;
+  z-index:5;
+  top: 10px;
+  left:30px;
 }
